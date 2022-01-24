@@ -10,17 +10,6 @@ class HeroesVillains {
   }
 }
 
-ash.forEach((val) => {
-  let speed = +(Math.random() * 4 + 1).toFixed(2);
-  let power = +(Math.random() * 9 + 1).toFixed(2);
-  heroes.push(new HeroesVillains(val, speed, power));
-});
-
-gev.forEach((val) => {
-  let speed = +(Math.random() * 4 + 1).toFixed(2);
-  let power = +(Math.random() * 9 + 1).toFixed(2);
-  villains.push(new HeroesVillains(val, speed, power));
-});
 for (let i = 0; i < 20; i++) {
   let name = Math.random()
     .toString(36)
