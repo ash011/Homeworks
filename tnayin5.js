@@ -82,7 +82,7 @@ function battle(vil, her, num) {
   let timer = setInterval(() => {
     time1++;
     time2++;
-    if (time1 >= 1/vil.speed * 5 * 500) {
+    if (time1 >= 1/vil.speed * 500) {
       her.health = her.health - vil.power;
       console.log(`${vil.name}[${vil.health}] hits ${her.name}[${her.health}]  with a power of ${vil.power}`)
       time1 = 0;
@@ -94,7 +94,7 @@ function battle(vil, her, num) {
         vsBatt()
       }
     }
-    if (time2 >= 1/her.speed * 5 * 500) {
+    if (time2 >= 1/her.speed * 500 ) {
       vil.health = vil.health - her.power;
       console.log(`${her.name}[${her.health}] hits ${vil.name}[${vil.health}]  with a power of ${her.power}`)
       time2 = 0;
