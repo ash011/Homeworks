@@ -10,6 +10,17 @@ class HeroesVillains {
   }
 }
 
+ash.forEach((val) => {
+  let speed = +(Math.random() * 4 + 1).toFixed(2);
+  let power = +(Math.random() * 9 + 1).toFixed(2);
+  heroes.push(new HeroesVillains(val, speed, power));
+});
+
+gev.forEach((val) => {
+  let speed = +(Math.random() * 4 + 1).toFixed(2);
+  let power = +(Math.random() * 9 + 1).toFixed(2);
+  villains.push(new HeroesVillains(val, speed, power));
+});
 for (let i = 0; i < 20; i++) {
   let name = Math.random()
     .toString(36)
@@ -35,6 +46,7 @@ function versus(villain, bat = ()=>{}) {
   hero.vs = villain.name;
   bat()
 }
+
 function vsBatt(){
   if(heroes.length === 0 || villains.length === 0){
     let text = "";
@@ -81,7 +93,7 @@ function battle(vil, her, num) {
   let timer = setInterval(() => {
     time1++;
     time2++;
-    if (time1 >= 1/vil.speed * 5 * 1000) {
+    if (time1 >= 1/vil.speed * 5 * 500) {
       her.health = her.health - vil.power;
       console.log(`${vil.name}[${vil.health}] hits ${her.name}[${her.health}]  with a power of ${vil.power}`)
       time1 = 0;
@@ -93,7 +105,7 @@ function battle(vil, her, num) {
         vsBatt()
       }
     }
-    if (time2 >= 1/her.speed * 5 * 1000) {
+    if (time2 >= 1/her.speed * 5 * 500) {
       vil.health = vil.health - her.power;
       console.log(`${her.name}[${her.health}] hits ${vil.name}[${vil.health}]  with a power of ${her.power}`)
       time2 = 0;
