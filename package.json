@@ -1,0 +1,25 @@
+{
+  "name": "tnayinner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tnayin1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ash011/Homeworks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ash011/Homeworks/issues"
+  },
+  "homepage": "https://github.com/ash011/Homeworks#readme",
+  "devDependencies": {
+    "eslint": "^8.8.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4"
+  }
+}
