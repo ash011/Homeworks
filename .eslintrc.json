@@ -15,6 +15,7 @@
         "quotes": "off",
         "no-plusplus":"off",
         "prefer-template":"off",
-        "no-useless-concat":"off"
+        "no-useless-concat":"off",
+        "no-use-before-define":"off"
     }
 }
